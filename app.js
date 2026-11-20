@@ -1,5 +1,5 @@
 // === KONFIGURATION (Hier deine Daten aus Supabase -> Project Settings -> API eintragen) ===
-const SUPABASE_URL = 'https://safwpnydpdofqzykecvm.supabase.co/rest/v1/';
+const SUPABASE_URL = 'https://safwpnydpdofqzykecvm.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable__qth2YSfzaB5ixThsJMAeg_hkQ-_QG0';
 
 const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
