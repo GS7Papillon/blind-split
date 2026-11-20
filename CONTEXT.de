@@ -1,0 +1,5 @@
+# Projekt-Regeln für BlindSplit
+- Stack: Vanilla HTML/CSS/JS PWA + Supabase (PostgreSQL).
+- Sicherheits-Regel (NICHT BRECHEN): Die Tabelle `debts` hat strenge Row Level Security (`SELECT` nur für `created_by = auth.uid()`).
+- Salden zwischen Nutzern dürfen NIEMALS über normale `SELECT`-Abfragen im Frontend berechnet werden, sondern ausschließlich über PostgreSQL-RPC-Funktionen mit `SECURITY DEFINER` (wie `get_my_balances`).
+- Pflichtfelder bei jedem Posten: `amount`, `title` (min. 2 Zeichen), `reason` (min. 3 Zeichen).

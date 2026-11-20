@@ -1,0 +1,10 @@
+{
+  "name": "BlindSplit",
+  "short_name": "BlindSplit",
+  "description": "Schulden gegeneinander aufrechnen – ohne fremde Einzelposten zu sehen",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f6f9",
+  "theme_color": "#0f172a",
+  "orientation": "portrait"
+}
